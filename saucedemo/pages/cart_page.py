@@ -7,9 +7,7 @@ class Cart:
     def __init__(self, driver):
         self.driver = driver
 
-    # Method to go to the cart page
     def go_to_cart(self):
-        # Explicit wait to ensure the cart link is clickable
         WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, LocCart.cart_link))
         ).click()
