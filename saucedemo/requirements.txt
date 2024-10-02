@@ -1,0 +1,4 @@
+selenium == 4.23.1
+requests
+pytest
+pytest-html
